@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <style>
+        [v-cloak] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- 使用v-cloak解决插值表达式闪烁问题 -->
+        <p v-cloak>{{ msg }}</p>
+        <!-- v-text默认没有闪缩问题。这种写法默认会覆盖元素中原本的内容，而插值表达式只会替换自己的这个占位符 -->
+        <h4 v-text="msg">========</h4>
+
+        <div v-text="msg2"></div>
+        <div v-html="msg2"></div><!--能够支持html-->
+    </div>
+
+    <script>
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                msg: 123,
+                msg2: '<h3>这个是大一点的h3</h3>'
+            }
+        })
+    </script>
+</body>
+</html>
