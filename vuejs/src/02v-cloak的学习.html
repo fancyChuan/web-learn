@@ -19,6 +19,9 @@
 
         <div v-text="msg2"></div>
         <div v-html="msg2"></div><!--能够支持html-->
+
+        <!-- v-bind Vue中提供用于绑定属性的指令 -->
+        <input type="button" value="按钮" v-bind:title="mytitle + '123'">
     </div>
 
     <script>
@@ -26,7 +29,8 @@
             el: "#app",
             data: {
                 msg: 123,
-                msg2: '<h3>这个是大一点的h3</h3>'
+                msg2: '<h3>这个是大一点的h3</h3>',
+                mytitle: "自定义title"
             }
         })
     </script>
