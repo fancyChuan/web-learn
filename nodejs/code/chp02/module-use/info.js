@@ -12,3 +12,7 @@ module.exports.age = 33;
 module.exports.sayHello = function () {
     console.log("hello")
 };
+
+
+// exports = {1,2,3} // 这个代码会切断exports与module.exports的联系，不能直接定义数据
+// module.exports = [1,2,3]; // 这个是可以生效的
