@@ -1,5 +1,5 @@
 
-//要加载markdown这个模块，要先到当前目录的node_modules去查找，即 chp03/lib/node_modules
+//要加载markdown这个模块，要先到当前目录的node_modules去查找，即 chap03/lib/node_modules
 // 找到markdown之后，会在markdown目录下找到package.json，最后通过package.json里面的main找到index.js
 var markdown = require("markdown");
 

@@ -48,5 +48,6 @@ NPM是nodejs的包管理系统
 
 ![image](img/npm常用命令2.png)
 
-require的加载机制： [demo.js](code/chp03/lib/demo.js)
+require的加载机制： [demo.js](code/chap03/lib/demo.js)
 
+### 4. Node.js文件操作
