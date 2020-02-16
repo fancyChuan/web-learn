@@ -13,3 +13,5 @@
     - 这种方式是最理想的，也是大部分第三方库所采用的方法
 
 函数闭包的维护和拓展。参见 [FunctionClosureExpand.js](js/FunctionClosureExpand.js)
+
+
