@@ -18,6 +18,7 @@ global对象和模块作用域
 - console对象
 
 ### 3异步编程和包资源管理
+#### 3.1 异步编程
 JavaScript的执行环境是单线程的。
 
 异步编程： 使用setTimeout()方法
@@ -26,3 +27,26 @@ JavaScript的执行环境是单线程的。
 - 函数名称一般为callback
 - 代码中出现的错误作为callback回调函数的第一个参数进行传递
 - 把真正返回的结构作为callback回调函数的第二个参数进行传递
+
+> 还需要理解异步编程中的“事件驱动”思路
+
+#### 3.2 包和NPM
+nodejs的包遵循CommonJS规范，规范的包目录结构如下：
+
+包结构 | 作用
+--- | ---
+package.json | 在顶层目录的包描述文件，说明文件
+bin | 存放可执行的二进制文件
+lib | 存放JavaScript文件的目录
+doc | 存放文档
+test | 存放测试用例
+
+
+NPM是nodejs的包管理系统
+
+![image](img/npm常用命令1.png)
+
+![image](img/npm常用命令2.png)
+
+require的加载机制： [demo.js](code/chp03/lib/demo.js)
+
