@@ -51,3 +51,10 @@ NPM是nodejs的包管理系统
 require的加载机制： [demo.js](code/chap03/lib/demo.js)
 
 ### 4. Node.js文件操作
+
+- 文件写入
+    - 同步写入（用得少）： fs.writeFileSync(file, data[, options]);
+    - 异步写入（性能较高）： fs.writeFile(file, data[, options], callback);
+> options 为一个对象 {encoding, mode, flag} 默认值分别为'utf8'、'0o666'、'w'
+- 追加写入： appendFile
+- 读取文件： readFile(file[, options], callback)
