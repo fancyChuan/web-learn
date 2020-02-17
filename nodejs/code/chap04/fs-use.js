@@ -19,3 +19,11 @@ fs.readFile('./write.txt', function (err, data) {
     console.log("读取的结果： ");
     console.log(data.toString())
 });
+
+
+console.log("获取文件信息");
+fs.stat("./write.txt", function (err, stats) {
+    console.log("是否是文件：" + stats.isFile());
+    console.log(stats)
+});
+
