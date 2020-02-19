@@ -60,3 +60,10 @@ require的加载机制： [demo.js](code/chap03/lib/demo.js)
 - 读取文件： readFile(file[, options], callback)
 - 获取文件信息： fs.stat(path)
 
+路径字符串操作（Path模式）
+- path.basename()文件名 path.dirname()文件所在目录 path.extname()后缀
+- path.join() 
+- fs.mkdir() 
+- fs.readdir(path, function(err, files){...})
+- fs.unlink() 用于删除文件
+- fs.rmdir() 用于删除空目录
