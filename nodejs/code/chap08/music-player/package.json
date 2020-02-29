@@ -1,0 +1,16 @@
+{
+  "name": "music-player",
+  "version": "1.0.0",
+  "private": true,
+  "description": "一个简单的音乐播放器",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error:no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "formidable": "^1.0.17",
+    "underscore": "^1.8.3"
+  }
+}
